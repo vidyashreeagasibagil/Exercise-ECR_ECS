@@ -1,4 +1,4 @@
-FROM openjdk:8
+FROM openjdk:11
 ADD target/springboot.jar springboot.jar
-EXPOSE 8080
+EXPOSE 8096
 ENTRYPOINT ["java","-jar","springboot.jar"] 
