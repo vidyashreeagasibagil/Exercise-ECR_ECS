@@ -1,4 +1,5 @@
-FROM openjdk:11
+FROM openjdk:11-jdk
+ARG MAVEN_VERSION=3.8.4
 WORKDIR /opt/app
 COPY ./ /opt/app
 RUN mvn clean install -DskipTests
